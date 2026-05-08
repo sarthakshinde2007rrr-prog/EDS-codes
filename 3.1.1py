@@ -1,0 +1,29 @@
+import numpy as np
+import numpy as np
+import numpy as np
+# read number of rows and columns
+rows, cols = map(int, input().split())
+
+
+# read array elements row-wise
+elements = []
+for _ in range(rows):
+    elements.extend(map(int, input().split()))
+
+
+# create and reshape NumPy array
+arr = np.array(elements).reshape(rows, cols)
+
+
+# display the array
+print(arr)
+
+
+# display ndim, shape, and size
+print(arr.ndim)
+print(arr.shape)
+print(arr.size)
+
+
+
+
