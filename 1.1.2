@@ -1,0 +1,21 @@
+import math
+
+
+#Take input from the User
+n = int(input())
+
+
+# check the number of digits in the input
+if 1 <= n <= 9:  # single-digit number
+
+     print(n ** 2)  # print the square of the number
+elif 10 <= n <= 99:  # Two-digit number
+
+     print(f"{math.sqrt(n):.2f}")  # print the square root rounded to two decimial places
+elif 100 <= n <= 999:   #  Three-digit number
+
+      print(f"{math.cbrt(n):.2f}")   # print the cube root of rounded to two decimal places
+else:
+
+      print("Invalid")    #Invalid input outside the range 1-999
+	
